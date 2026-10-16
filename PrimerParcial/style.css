@@ -1,0 +1,123 @@
+:root {
+    --color-primario: #483D8B;
+    --gris-oscuro: #dddddd;
+    --gris-claro: #fbfbfb;
+    --blanco: #ffffff;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+}
+header {
+    background-color: var(--color-primario);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    color: var(--blanco);
+    margin: 0;
+    text-align: center;
+}
+main {
+    padding: 25px 40px;
+}
+#titulo-users {
+    color: var(--color-primario);
+    cursor: pointer;
+    margin-top: 0;
+}
+hr {
+    border: none;
+    height: 5px;
+    background-color: var(--gris-oscuro);
+}
+.controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.filtros {
+    display: flex;
+    gap: 20px;
+}
+.filtros span {
+    color: var(--color-primario);
+    cursor: pointer;
+}
+.filtros span:hover {
+    text-decoration: underline;
+}
+#busqueda {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid var(--gris-oscuro);
+    border-radius: 4px;
+    background-color: var(--blanco);
+}
+#busqueda:focus {
+    outline: none;
+    border-color: var(--color-primario);
+}
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.botones button {
+    padding: 12px 24px;
+    border: 1px solid var(--color-primario);
+    border-radius: 4px;
+    background-color: var(--color-primario);
+    color: var(--blanco);
+    cursor: pointer;
+}
+.botones button:hover {
+    background-color: #362d69;
+}
+#users-container {
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th {
+    background-color: var(--gris-oscuro);
+    border: 1px solid var(--gris-oscuro);
+    padding: 12px;
+    text-align: left;
+}
+td {
+    border: 1px solid var(--gris-oscuro);
+    padding: 12px;
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--gris-claro);
+}
+tbody tr:nth-child(even) {
+    background-color: var(--blanco);
+}
+tbody td:nth-child(3) {
+    color: var(--color-primario);
+}
+td img {
+    display: block;
+    border-radius: 50%;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+table input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #483D8B;
+}
